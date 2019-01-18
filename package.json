@@ -1,0 +1,23 @@
+{
+  "name": "vue-srr-php",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "npm run build:server -- && npm run build:client -- --no-clean",
+    "build:client": "vue-cli-service build",
+    "build:server": "cross-env WEBPACK_TARGET=node vue-cli-service build"
+  },
+  "dependencies": {
+    "vue": "^2.5.22",
+    "vue-router": "^3.0.1",
+    "vue-server-renderer": "^2.5.22",
+    "vuex": "^3.1.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.3.0",
+    "@vue/cli-service": "^3.3.0",
+    "cross-env": "^5.2.0",
+    "vue-template-compiler": "^2.5.22"
+  }
+}
